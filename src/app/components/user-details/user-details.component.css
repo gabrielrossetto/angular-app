@@ -5,17 +5,28 @@
   padding: 1rem;
 }
 
+.personal-info-form {
+  width: 50%;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .personal-info-section {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
-
-  mat-form-field {
-    width: 100%;
-  }
 }
 
 .error-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: red;
+  margin-top: 0.5rem;
+  width: 100%;
 }
