@@ -1,26 +1,53 @@
-<form [formGroup]="userForm">
+<form [formGroup]="userForm" class="personal-info-form">
   <div class="personal-info-section">
-    <mat-form-field>
-      <input matInput formControlName="firstName" placeholder="First Name" required />
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput formControlName="lastName" placeholder="Last Name" required />
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput formControlName="email" placeholder="Email" required email />
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput formControlName="street" placeholder="Street" required />
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput formControlName="city" placeholder="City" required />
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput formControlName="zipcode" placeholder="Zip Code" pattern="[0-9]*" />
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput formControlName="country" placeholder="Country" required />
-    </mat-form-field>
+    <div class="form-field">
+      <label for="firstName">First Name</label>
+      <mat-form-field>
+        <input matInput formControlName="firstName" id="firstName" placeholder="First Name" required />
+      </mat-form-field>
+    </div>
+
+    <div class="form-field">
+      <label for="lastName">Last Name</label>
+      <mat-form-field>
+        <input matInput formControlName="lastName" id="lastName" placeholder="Last Name" required />
+      </mat-form-field>
+    </div>
+
+    <div class="form-field">
+      <label for="email">Email</label>
+      <mat-form-field>
+        <input matInput formControlName="email" id="email" placeholder="Email" required email />
+      </mat-form-field>
+    </div>
+
+    <div class="form-field">
+      <label for="street">Street</label>
+      <mat-form-field>
+        <input matInput formControlName="street" id="street" placeholder="Street" required />
+      </mat-form-field>
+    </div>
+
+    <div class="form-field">
+      <label for="city">City</label>
+      <mat-form-field>
+        <input matInput formControlName="city" id="city" placeholder="City" required />
+      </mat-form-field>
+    </div>
+
+    <div class="form-field">
+      <label for="zipcode">Zip Code</label>
+      <mat-form-field>
+        <input matInput formControlName="zipcode" id="zipcode" placeholder="Zip Code" pattern="[0-9]*" />
+      </mat-form-field>
+    </div>
+
+    <div class="form-field">
+      <label for="country">Country</label>
+      <mat-form-field>
+        <input matInput formControlName="country" id="country" placeholder="Country" required />
+      </mat-form-field>
+    </div>
   </div>
 
   <div *ngIf="userForm.invalid" class="error-message">

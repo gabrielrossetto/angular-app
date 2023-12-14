@@ -6,7 +6,7 @@
 
 .user-card {
   margin: 1rem;
-  width: 19rem;
+  width: calc(33.33% - 2rem);
 }
 
 .user-avatar img {
