@@ -1,0 +1,29 @@
+<form [formGroup]="userForm">
+  <div class="personal-info-section">
+    <mat-form-field>
+      <input matInput formControlName="firstName" placeholder="First Name" required />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="lastName" placeholder="Last Name" required />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="email" placeholder="Email" required email />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="street" placeholder="Street" required />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="city" placeholder="City" required />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="zipcode" placeholder="Zip Code" pattern="[0-9]*" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="country" placeholder="Country" required />
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="userForm.invalid" class="error-message">
+    The form contains errors. Please correct the highlighted fields.
+  </div>
+</form>

@@ -1,0 +1,12 @@
+.search-input {
+  margin-right: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.header-buttons button {
+  margin-left: 0.625rem;
+}
