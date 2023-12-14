@@ -8,7 +8,7 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/dashboard/u
 
 ## Application Demo
 
-![AppDemo](https://github.com/gabrielrossetto/angular-app/assets/42679806/3d498f03-1efc-419c-88b5-622558ec8464)
+
 
 ## Components docs
 

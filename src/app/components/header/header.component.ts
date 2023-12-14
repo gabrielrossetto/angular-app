@@ -33,9 +33,11 @@ export class HeaderComponent implements OnInit {
 
   saveButtonClick(): void {
     this.communicationService.emitSaveButtonClick();
+    this.searchQuery = '';
   }
 
   addButtonClick(): void {
     this.userService.addUser();
+    this.searchQuery = '';
   }
 }
