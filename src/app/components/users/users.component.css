@@ -1,0 +1,42 @@
+.user-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.user-card {
+  margin: 1rem;
+  width: 19rem;
+}
+
+.user-avatar img {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+
+.no-users-message {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card-mat {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.rounded-avatar {
+  border-radius: 50%;
+}
+
+.centered {
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+<div class="user-grid">
+  <ng-container *ngIf="users.length > 0; else noUsersMessage">
+    <div *ngFor="let user of users" class="user-card" (click)="navigateToUserDetails(user.id)">
+      <mat-card class="user-card-mat" matTooltip="Click to edit" matTooltipPosition="above" matTooltipShowDelay="500">
+        <mat-card-header>
+          <div mat-card-avatar class="user-avatar">
+            <img [src]="user.avatarUrl" alt="User Avatar" class="rounded-avatar">
+          </div>
+          <mat-card-title class="centered">{{ user.firstName }} {{ user.lastName }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ user.email }}</p>
+          <p>{{ user.street }}, {{ user.city }}, {{ user.zipcode }}, {{ user.country }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </ng-container>
+  <ng-template #noUsersMessage>
+    <div class="no-users-message">
+      <p class="centered">No users found.</p>
+    </div>
+  </ng-template>
+</div>
